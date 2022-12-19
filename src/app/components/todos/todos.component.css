@@ -1,0 +1,91 @@
+.todo {
+  display: flex;
+  padding: 10px 15px;
+  background-color: #FFF;
+  border-bottom: 1px solid #DDD;
+}
+
+.todo:nth-child(even) {
+  background-color: #EEE;
+}
+
+.todo:last-of-type {
+  border-bottom: 0;
+}
+
+.todo .id {
+  flex: 1 1 50px;
+}
+
+.todo .content {
+  flex: 1 1 100%;
+}
+
+.todo.done .content {
+  color: #5d5d5d;
+
+}
+
+.todo-input {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  appearance: none;
+  border: none;
+  background-color: #F3F3F3;
+  margin-top: 15px;
+  font-size: 20px;
+  outline: none;
+}
+
+.todo-submit {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+
+  background-color: #FE4880;
+  color: #FFF;
+  margin: 15px auto;
+
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.circle-button{
+  width: 15px;
+  height: 15px;
+  border-radius: 25px;
+  margin-right: 25px;
+  border: 2px solid #5d5d5d;
+  cursor: pointer;
+  line-height: 50px;
+}
+.circle-button.done{
+  width: 15px;
+  height: 15px;
+  border-radius: 25px;
+  margin-right: 25px;
+  border: 2px solid #9d1b43;
+  background-color: #fe4880;
+  cursor: pointer;
+  line-height: 50px;
+}
+
+.delete{
+  background-color: rgba(255, 228, 181, 0);
+  border-color: rgba(254, 72, 128, 0);
+  cursor: pointer;
+
+}
+.delete:hover{
+  color: #fe4880;
+}
+.delete:after{
+  display: inline-block;
+  content: "\00d7"; /* This will render the 'X' */
+  font-size: 35px;
+}
