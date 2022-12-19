@@ -5,4 +5,4 @@ CREATE TABLE IF NOT EXISTS todos(
 
 );
 INSERT INTO todos (content, toggle)
-VALUES ('I really like pie', false);
+VALUES ('I really like pie', todosfalse);
